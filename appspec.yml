@@ -2,14 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: .
-    destination: /var/www/
+    destination: /var
 hooks:
   ApplicationStop:
     - location: deployment/application_stop.sh
       timeout: 30
-  ApplicationStart:
-    - location: deployment/application_start.sh
-      timeout: 30
-  ValidateService:
-    - location: deployment/validate.sh
-      timeout: 30
+  #ApplicationStart:
+   # - location: deployment/application_start.sh
+    #  timeout: 30
+  #ValidateService:
+   # - location: deployment/validate.sh
+   #   timeout: 30
