@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/bin/systemctl start httpd.service
+Service apache2 start
