@@ -1,3 +1,3 @@
 #!/bin/bash
 rm -rf /var/www/html/index.html
-/bin/systemctl stop httpd.service
+service apache2 stop
